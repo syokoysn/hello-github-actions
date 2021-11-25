@@ -10,6 +10,8 @@ jobs:
         run: pwd
       - name: check2
         run: ls
+      - name: update
+        run: RUN chmod +x /entrypoint.sh
       - name: copy file
         run: ./entrypoint.sh ./action-a/entrypoint.sh
       - uses: ./action-a
