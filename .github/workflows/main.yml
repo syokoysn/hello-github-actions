@@ -13,7 +13,9 @@ jobs:
       - name: update
         run: chmod +x entrypoint.sh
       - name: copy file
-        run: ./entrypoint.sh ./action-a/entrypoint.sh
+        run: copy ./entrypoint.sh ./action-a/entrypoint.sh
+      - name: check3
+        run: ls ./action-a/
       - uses: ./action-a
         with:
           MY_NAME: "Mona"
