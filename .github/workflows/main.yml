@@ -11,7 +11,7 @@ jobs:
       - name: check2
         run: ls
       - name: copy file
-        run: entrypoint.sh ./action-a/entrypoint.sh
+        run: ./entrypoint.sh ./action-a/entrypoint.sh
       - uses: ./action-a
         with:
           MY_NAME: "Mona"
