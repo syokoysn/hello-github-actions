@@ -6,6 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - name: check
+        run: pwd
+      - name: check2
+        run: ls
       - name: copy file
         run: entrypoint.sh ./action-a/entrypoint.sh
       - uses: ./action-a
