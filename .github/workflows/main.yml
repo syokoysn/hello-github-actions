@@ -11,9 +11,9 @@ jobs:
       - name: check2
         run: ls
       - name: update
-        run: chmod +x entrypoint.sh
+        run: chmod +x dir/
       - name: copy file
-        run: cp ./entrypoint.sh ./action-a/entrypoint.sh
+        run: cp -r ./dir/ ./action-a/dir/
       - name: check3
         run: ls ./action-a/
       - uses: ./action-a
