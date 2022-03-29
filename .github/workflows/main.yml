@@ -9,9 +9,9 @@ jobs:
       - name: check
         run: pwd
       - name: check_1
-        run: git rev-parse --short "$GITHUB_SHA"
+        run: git rev-parse --short=8 "$GITHUB_SHA"
       - name: check_2
-        run: $(git rev-parse --short=8 HEAD)
+        run: git rev-parse --short=8 HEAD
       - name: check2
         run: ls
       - name: update
