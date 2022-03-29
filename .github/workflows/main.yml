@@ -11,7 +11,7 @@ jobs:
       - name: check
         run: pwd
       - name: check_how1
-        run: git_hash=$(git rev-parse --short=8 "$GITHUB_SHA")
+        run: echo "$(git rev-parse --short=8 "$GITHUB_SHA")"
       - name: check_how2
         run: git rev-parse --short=8 HEAD
       - name: check2
